@@ -19,7 +19,7 @@ function App() {
       <WalletProvider wallets={wallets} autoConnect>
         <WalletModalProvider>
           <div className="App">
-            <Router>
+            <Router basename="/Orijin">
               <Routes>
                 <Route path="/" element={<Homepage />} />
               </Routes>
