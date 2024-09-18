@@ -1,0 +1,55 @@
+@import url('https://fonts.google.com/share?selection.family=Electrolize');
+
+.navbar {
+    background-color: rgba(7, 1, 10, 0.936); /* Dark background */
+    padding: 22px; /* Add padding for spacing */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* Positioning for logo and links */
+    border-bottom: 2px solid rgba(224, 37, 245, 0.8); /* Enhanced border */
+    box-shadow: 
+        0 0 40px rgb(247, 0, 255),  /* Strong primary glow */
+        0 0 80px rgb(247, 28, 255),  /* Secondary outer glow */
+        0 0 120px rgba(247, 28, 255, 0.997); /* Further outer glow for additional spread */
+}
+
+
+.logo {
+    display: flex;
+ 
+}
+
+.navbar-logo {
+    height: 70px;
+    width: 150px; 
+    margin-left: 100px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+    align-items: center; /* Center nav links vertically */
+}
+
+.nav-link {
+    font-family: 'Electrolize', cursive;
+    color: white; /* Set text color to white */
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: all 0.3s ease;
+    position: relative;
+    padding: 5px 0; /* Add padding for spacing */
+    font-family: 'Orbitron', sans-serif;
+}
+
+.nav-link:hover {
+    background-color: rgba(235, 107, 223, 0.29); /* Hover effect */
+}
+
+.nav-link.active {
+    background-color: rgba(146, 32, 152, 0.852); /* Active state */
+    box-shadow: 0 0 10px rgba(118, 12, 163, 0.3);
+}
+
+

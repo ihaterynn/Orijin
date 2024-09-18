@@ -1,0 +1,20 @@
+/* Target the WalletMultiButton default styling */
+.wallet-adapter-button {
+    background: linear-gradient(45deg, #f54af2, #5367ea) !important; /* Your gradient */
+    color: black !important; /* Text color */
+    border: none !important; /* No border */
+    padding: 15px 15px !important; /* Adjust padding */
+    border-radius: 30px !important; /* Rounded corners */
+    font-size: 1em !important; /* Font size */
+    cursor: pointer !important; /* Pointer cursor on hover */
+    transition: all 0.3s ease !important; /* Smooth transitions */
+    font-family: 'Orbitron', sans-serif !important; /* Font style */
+    font-weight: bold !important; /* Bold text */
+    text-transform: uppercase !important; /* Uppercase text */
+    letter-spacing: 2px !important; /* Letter spacing */
+}
+
+.wallet-adapter-button:hover {
+    box-shadow: 0 0 20px rgba(200, 44, 211, 0.773) !important; /* Add hover shadow */
+    transform: scale(1.05) !important; /* Slight scale on hover */
+}
