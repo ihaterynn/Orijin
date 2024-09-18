@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/Orijin/static/css/main.284b4abe.css",
-    "main.js": "/Orijin/static/js/main.2135b314.js",
+    "main.js": "/Orijin/static/js/main.db947483.js",
     "static/js/453.f2621980.chunk.js": "/Orijin/static/js/453.f2621980.chunk.js",
     "static/media/Logo2.png": "/Orijin/static/media/Logo2.a6ea888bb7e9fedd2433.png",
     "index.html": "/Orijin/index.html",
     "main.284b4abe.css.map": "/Orijin/static/css/main.284b4abe.css.map",
-    "main.2135b314.js.map": "/Orijin/static/js/main.2135b314.js.map",
+    "main.db947483.js.map": "/Orijin/static/js/main.db947483.js.map",
     "453.f2621980.chunk.js.map": "/Orijin/static/js/453.f2621980.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.284b4abe.css",
-    "static/js/main.2135b314.js"
+    "static/js/main.db947483.js"
   ]
 }
