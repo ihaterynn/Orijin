@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom'; 
 import Navbar from '../components/navbar';
 import './homepage.css';
 
 const Homepage = () => {
   const [name, setName] = useState(''); // Default is empty until loaded
-  const [role, setRole] = useState(''); 
+  const [role, setRole] = useState('');
+
+  const navigate = useNavigate(); // Initialize the useNavigate hook
 
   // Load the name and role from localStorage when the component mounts
   useEffect(() => {
@@ -61,7 +64,7 @@ const Homepage = () => {
           <p className="intro">
             Explore, mint, and trade your unique Games in the Orijin marketplace
           </p>
-          <button className="explore-button">Explore Now</button>
+          <button className="explore-button" onClick={() => navigate('/marketplace')}>Explore Now</button>
         </div>
       </section>
 

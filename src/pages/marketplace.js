@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Navbar from '../components/navbar';
 import './marketplace.css';
 
-// Import game images
 import aevitas from '../graphics/aevitas.png';
 import eldenring from '../graphics/eldenring.jpg';
 import delysium from '../graphics/delysium.jpg';
@@ -17,7 +16,6 @@ import theWitcher from '../graphics/theWitcher.jpg';
 const Marketplace = () => {
   const [genre, setGenre] = useState('All');
 
-  // Game data including the imported images
   const games = [
     { name: 'Halo Infinite', id: Math.random().toString(36).substring(7), price: '0.5', banner: halo, genre: 'Action' },
     { name: 'Infamous Second Son', id: Math.random().toString(36).substring(7), price: '0.2', banner: infamous, genre: 'Action' },
@@ -38,7 +36,6 @@ const Marketplace = () => {
     <div className="marketplace-page">
       <Navbar />
       <div className="marketplace-container">
-        {/* Header */}
         <div className="marketplace-header-container">
           <h1 className="marketplace-header">ORIJIN Marketplace</h1>
           <button className="publish-button">Publish a Game</button>
