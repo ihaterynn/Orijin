@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Orijin/static/css/main.d4b3a9c1.css",
-    "main.js": "/Orijin/static/js/main.a6138402.js",
+    "main.js": "/Orijin/static/js/main.a819f3c6.js",
     "static/js/453.f2621980.chunk.js": "/Orijin/static/js/453.f2621980.chunk.js",
     "static/media/delysium.jpg": "/Orijin/static/media/delysium.ee6bd0aa1b1b77a2ca5a.jpg",
     "static/media/angelic.png": "/Orijin/static/media/angelic.748d1057bdc6c1fa6ad2.png",
@@ -13,11 +13,11 @@
     "static/media/sekiro.jpg": "/Orijin/static/media/sekiro.dee83db5a6dcee8ae19d.jpg",
     "index.html": "/Orijin/index.html",
     "main.d4b3a9c1.css.map": "/Orijin/static/css/main.d4b3a9c1.css.map",
-    "main.a6138402.js.map": "/Orijin/static/js/main.a6138402.js.map",
+    "main.a819f3c6.js.map": "/Orijin/static/js/main.a819f3c6.js.map",
     "453.f2621980.chunk.js.map": "/Orijin/static/js/453.f2621980.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d4b3a9c1.css",
-    "static/js/main.a6138402.js"
+    "static/js/main.a819f3c6.js"
   ]
 }
