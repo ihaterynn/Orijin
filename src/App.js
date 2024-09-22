@@ -8,8 +8,8 @@ import { WalletModalProvider } from '@solana/wallet-adapter-react-ui';
 import { clusterApiUrl } from '@solana/web3.js';
 import Homepage from './pages/homepage';
 import Profile from './pages/profile';
-import Marketplace from './pages/marketplace';  // Assume you have this page
-import '@solana/wallet-adapter-react-ui/styles.css'; // Important to include default modal styles
+import Marketplace from './pages/marketplace';  
+import '@solana/wallet-adapter-react-ui/styles.css'; 
 
 function App() {
   const network = WalletAdapterNetwork.Devnet; // Change to mainnet or testnet if needed

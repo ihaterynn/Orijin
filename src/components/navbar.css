@@ -1,7 +1,7 @@
 @import url('https://fonts.google.com/share?selection.family=Electrolize');
 
 .navbar {
-    background-color: rgba(2, 0, 3, 0.936); /* Dark background */
+    background-color: rgb(2, 0, 3); /* Dark background */
     padding: 22px; /* Add padding for spacing */
     display: flex;
     justify-content: space-between;
