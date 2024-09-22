@@ -11,7 +11,7 @@ Visit the live website at: [Orijin on GitHub Pages](https://ihaterynn.github.io/
 
 <br>
 
-## Features
+## How it works
 - **Decentralized Marketplace**: Games are tokenized as NFTs with unique IDs to prevent piracy. 
 - **Secure Transactions**: Game ownership can be securely transferred via smart contracts, with royalties paid to the original developer.
 - **Minting Fees**: Developers incur a small transaction fee when minting new game copies.
