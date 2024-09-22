@@ -1,0 +1,185 @@
+.profile-page {
+    background: rgba(6, 3, 27, 0.956);
+    color: #e0e0ff;
+    min-height: 100vh;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.profile-page .container {
+    display: grid;
+    grid-template-columns: 225px 1fr;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.profile-page .profile-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    border: 1px solid rgba(0, 255, 255, 0.3);
+    box-shadow: 0 0 10px rgba(191, 13, 211, 0.4);
+    text-align: center;
+    padding: 20px;
+    position: sticky;
+    top: 20px;
+    height: fit-content;
+}
+
+.profile-page .profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #00ffff;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+    margin-bottom: 15px;
+}
+
+.profile-name-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-page .profile-name {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.5em;
+    margin: 15px 0;
+    background: linear-gradient(45deg, #00ffff, #ff00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.profile-id {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #e0e0ff;
+}
+
+
+.edit-icon {
+    cursor: pointer;
+    color: #ff00ff;
+    font-size: 1.2em;
+}
+
+.editable-name {
+    font-size: 1.5em;
+    text-align: center;
+    border: 1px solid #00ffff;
+    background: transparent;
+    color: #e0e0ff;
+    outline: none;
+    padding: 5px;
+}
+
+.role-select {
+    background: rgba(255, 255, 255, 0.1);
+    color: #e0e0ff;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.profile-page .profile-stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;
+    font-size: 0.9em;
+}
+
+.profile-page .section-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    border: 1px solid rgba(142, 70, 140, 0.3);
+    box-shadow: 0 0 10px rgba(191, 13, 211, 0.4);
+    padding: 20px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    width: 1000px;
+    text-align: center; /* Center the content inside the section card */
+}
+
+.profile-page .section-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.8em;
+    margin-bottom: 35px; /* Reduce the bottom margin */
+    margin-top: 5px; /* Move the title up */
+    color: #c426f9;
+    text-align: center;
+}
+
+.profile-page .games-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.profile-page .game-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 12px;
+    text-align: center;
+    flex-basis: calc(20% - 20px); /* 5 columns in a row */
+    box-shadow: 0 0 10px rgba(191, 13, 211, 0.4);
+    border-color: transparent;
+    margin-left: 20px;
+}
+
+.profile-page .game-banner {
+    width: 190px;
+    height: 300px; /* Increase the height */
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.profile-page .resell-button {
+    background: #c702fd;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.profile-page .resell-button:hover {
+    background: #b302cc;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(212, 0, 255, 0.7);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .profile-page .container {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-page .profile-card {
+        display: none;
+    }
+
+    .profile-page .section-card .games-list {
+        flex-basis: 100%;
+    }
+
+    .profile-page .game-card {
+        flex-basis: calc(50% - 20px); /* 2 columns */
+    }
+}
+
+@media (max-width: 768px) {
+    .profile-page .section-card .games-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .profile-page .game-card {
+        flex-basis: 100%;
+    }
+}

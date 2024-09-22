@@ -1,19 +1,18 @@
 @import url('https://fonts.google.com/share?selection.family=Electrolize');
 
 .navbar {
-    background-color: rgba(7, 1, 10, 0.936); /* Dark background */
+    background-color: rgba(2, 0, 3, 0.936); /* Dark background */
     padding: 22px; /* Add padding for spacing */
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative; /* Positioning for logo and links */
-    border-bottom: 2px solid rgba(224, 37, 245, 0.8); /* Enhanced border */
+    border-bottom: 1px solid rgba(224, 37, 245, 0.8); /* Enhanced border */
     box-shadow: 
-        0 0 40px rgb(247, 0, 255),  /* Strong primary glow */
-        0 0 80px rgb(247, 28, 255),  /* Secondary outer glow */
-        0 0 120px rgba(247, 28, 255, 0.997); /* Further outer glow for additional spread */
+        0 0 15px rgb(247, 0, 255),  /* Strong primary glow */
+        0 0 45px rgba(247, 28, 255, 0.69);  /* Secondary outer glow */
+    
 }
-
 
 .logo {
     display: flex;
