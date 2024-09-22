@@ -17,16 +17,16 @@ const Marketplace = () => {
   const [genre, setGenre] = useState('All');
 
   const games = [
-    { name: 'Halo Infinite', id: Math.random().toString(36).substring(7), price: '0.5', banner: halo, genre: 'Action' },
-    { name: 'Infamous Second Son', id: Math.random().toString(36).substring(7), price: '0.2', banner: infamous, genre: 'Action' },
-    { name: 'Devil May Cry V', id: Math.random().toString(36).substring(7), price: '0.4', banner: dmc5, genre: 'Adventure' },
-    { name: 'Ghost of Tsushima', id: Math.random().toString(36).substring(7), price: '0.3', banner: ghostoftsushima, genre: 'Adventure' },
-    { name: 'The Witcher', id: Math.random().toString(36).substring(7), price: '0.2', banner: theWitcher, genre: 'RPG' },
-    { name: 'Aevitas', id: Math.random().toString(36).substring(7), price: '0.1', banner: aevitas, genre: 'Action' },
-    { name: 'Elden Ring', id: Math.random().toString(36).substring(7), price: '0.4', banner: eldenring, genre: 'RPG' },
-    { name: 'Delysium', id: Math.random().toString(36).substring(7), price: '0.2', banner: delysium, genre: 'MMORPG' },
-    { name: 'Sekiro', id: Math.random().toString(36).substring(7), price: '0.3', banner: sekiro, genre: 'Adventure' },
-    { name: 'Angelic', id: Math.random().toString(36).substring(7), price: '0.2', banner: angelic, genre: 'Puzzles' }
+    { name: 'Halo Infinite', studio: '343 Industries' , price: '0.5', banner: halo, genre: 'Action' },
+    { name: 'Infamous Second Son', studio: 'Sucker Punch Productions', price: '0.2', banner: infamous, genre: 'Action' },
+    { name: 'Devil May Cry V', studio: 'Capcom', price: '0.4', banner: dmc5, genre: 'Adventure' },
+    { name: 'Ghost of Tsushima', studio: 'Sucker Punch Productions', price: '0.3', banner: ghostoftsushima, genre: 'Adventure' },
+    { name: 'The Witcher', studio: 'CD Projekt Red', price: '0.2', banner: theWitcher, genre: 'RPG' },
+    { name: 'Aevitas', studio: 'Alchemist Pictures', price: '0.1', banner: aevitas, genre: 'Action' },
+    { name: 'Elden Ring', studio: 'FromSoftware', price: '0.4', banner: eldenring, genre: 'RPG' },
+    { name: 'Delysium', studio: 'RCT AI', price: '0.2', banner: delysium, genre: 'MMORPG' },
+    { name: 'Sekiro', studio: 'FromSoftware', price: '0.3', banner: sekiro, genre: 'Adventure' },
+    { name: 'Angelic', studio: 'Metaverse Games Studio', price: '0.2', banner: angelic, genre: 'Puzzles' }
   ];
 
   // Filter games based on selected genre
@@ -63,7 +63,7 @@ const Marketplace = () => {
             <div className="game-card" key={index}>
               <img src={game.banner} alt={game.name} className="game-banner" />
               <p><strong>{game.name}</strong></p>
-              <p><strong>ID:</strong> {game.id}</p>
+              <p><small>{game.studio}</small></p>
               <p><strong>Price:</strong> {game.price} sol</p>
               <button className="buy-button">Buy</button>
             </div>
