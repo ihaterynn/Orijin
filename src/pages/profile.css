@@ -102,14 +102,14 @@
     margin-bottom: 30px;
     margin-left: 30px;
     width: 1000px;
-    text-align: center; /* Center the content inside the section card */
+    text-align: center; 
 }
 
 .profile-page .section-title {
     font-family: 'Orbitron', sans-serif;
     font-size: 1.8em;
-    margin-bottom: 35px; /* Reduce the bottom margin */
-    margin-top: 5px; /* Move the title up */
+    margin-bottom: 35px; 
+    margin-top: 5px; 
     color: #c426f9;
     text-align: center;
 }
@@ -125,7 +125,7 @@
     border-radius: 10px;
     padding: 12px;
     text-align: center;
-    flex-basis: calc(20% - 20px); /* 5 columns in a row */
+    flex-basis: calc(20% - 20px); 
     box-shadow: 0 0 10px rgba(191, 13, 211, 0.4);
     border-color: transparent;
     margin-left: 20px;
@@ -133,7 +133,7 @@
 
 .profile-page .game-banner {
     width: 190px;
-    height: 300px; /* Increase the height */
+    height: 300px;
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 10px;

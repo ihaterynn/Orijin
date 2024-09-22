@@ -4,7 +4,7 @@ import './homepage.css';
 
 const Homepage = () => {
   const [name, setName] = useState(''); // Default is empty until loaded
-  const [role, setRole] = useState(''); // Default is empty until loaded
+  const [role, setRole] = useState(''); 
 
   // Load the name and role from localStorage when the component mounts
   useEffect(() => {
@@ -13,8 +13,8 @@ const Homepage = () => {
     
     // If name/role exist in localStorage, use them, otherwise set defaults
     setName(storedName || 'Name');
-    setRole(storedRole || 'Trader/Developer');
-  }, []); // Empty dependency array means it only runs once when the component mounts
+    setRole(storedRole || 'Role');
+  }, []); 
 
   return (
     <main>
@@ -30,7 +30,7 @@ const Homepage = () => {
                   <span>Identity Card</span>
                 </div>
                 <div className="card-content">
-                  <h2 id="card-name">ORIJIN Marketplace</h2> {/* This stays unchanged */}
+                  <h2 id="card-name">ORIJIN Marketplace</h2> 
                   <p id="card-define">Explore and Trade Games</p>
                 </div>
                 <div className="card-footer">
@@ -39,10 +39,10 @@ const Homepage = () => {
               </div>
               <div className="card-face back">
                 <div className="card-header">
-                  <span>{name}</span> {/* Display user name here */}
+                  <span>{name}</span> {/* Display user name */}
                 </div>
                 <div className="card-content">
-                  <p>{role}</p> {/* Display user role here */}
+                  <p>{role}</p> {/* Display user role */}
                   <ul>
                     <li>Games Owned: 4</li>
                     <li>Games Sold: 2</li>

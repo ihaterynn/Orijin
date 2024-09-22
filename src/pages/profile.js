@@ -7,8 +7,8 @@ import eldenring from '../graphics/eldenring.jpg';
 import delysium from '../graphics/delysium.jpg';
 import sekiro from '../graphics/sekiro.jpg';
 import angelic from '../graphics/angelic.png';
-import halo from '../graphics/halo.jpg'; // Halo game image
-import profilePic from '../graphics/gangshi.jpg'; // New profile picture
+import halo from '../graphics/halo.jpg'; 
+import profilePic from '../graphics/gangshi.jpg'; 
 
 const Profile = () => {
   const [ownedGames] = useState([
@@ -20,13 +20,13 @@ const Profile = () => {
 
   const [soldGames] = useState([
     { name: 'Angelic', id: Math.random().toString(36).substring(7), price: '0.2', banner: angelic },
-    { name: 'Halo', id: Math.random().toString(36).substring(7), price: '0.3', banner: halo } // Add Halo to soldGames
+    { name: 'Halo', id: Math.random().toString(36).substring(7), price: '0.3', banner: halo } 
   ]);
 
   // Retrieve saved name and role from localStorage or use default values
-  const [name, setName] = useState(() => localStorage.getItem('profileName') || 'Satoshi Nakamoto');
+  const [name, setName] = useState(() => localStorage.getItem('profileName') || 'Enter Name');
   const [isEditing, setIsEditing] = useState(false);
-  const [role, setRole] = useState(() => localStorage.getItem('profileRole') || 'Trader');
+  const [role, setRole] = useState(() => localStorage.getItem('profileRole') || 'Role');
 
   // Handle name change and save to localStorage
   const handleNameChange = (e) => {
@@ -70,7 +70,7 @@ const Profile = () => {
             <span className="edit-icon" onClick={toggleEditName}>✏️</span>
           </div>
 
-          {/* Role Dropdown */}
+          {/* Dropdown */}
           <select
             value={role}
             onChange={handleRoleChange}
@@ -81,7 +81,7 @@ const Profile = () => {
             <option value="Developer">Developer</option>
           </select>
 
-          {/* Static ID */}
+
           <div className="profile-id">
             <strong>ID:</strong> 010002947192001
           </div>
