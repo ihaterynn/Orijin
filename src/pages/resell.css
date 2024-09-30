@@ -1,0 +1,92 @@
+/* Resell page container styling */
+.resell-page {
+    position: relative;
+    min-height: 100vh;
+    background: rgba(6, 3, 27, 0.956); /* Same background as hero */
+    font-family: 'Orbitron', sans-serif;
+}
+
+.resell-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center horizontally and vertically */
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    border-radius: 10px;
+    padding: 40px;
+    width: 30%;
+    max-width: 400px;
+    box-shadow: 0 0 10px rgba(191, 13, 211, 0.4); /* Soft glow */
+    text-align: center;
+    color: #fdfbfb; /* Text color */
+    margin-top: 60px;
+}
+
+/* Header for Resell Page */
+.resell-header {
+    font-size: 1.8em;
+    color: #c702fd; /* Bright neon purple */
+    margin-bottom: 50px;
+    margin-top: -10px; /* Move the header up by reducing the top margin */
+}
+
+
+/* Input field styling */
+.input-container {
+    display: flex;
+    align-items: center; /* Align label and input box on the same line */
+    margin-bottom: 20px;
+}
+
+.input-container label {
+    font-size: 1.1em;
+    color: #fdfbfb;
+    margin-right: 10px; /* Space between label and input box */
+    white-space: nowrap; /* Prevents text wrapping */
+}
+
+.selling-input,
+.recipient-input { /* Shared style for both inputs */
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px; /* Space between label and input box */
+    font-size: 1em;
+    background: rgba(255, 255, 255, 0.15); /* Lighter input background */
+    color: white;
+    flex-grow: 1; /* Allow input to grow and take remaining space */
+}
+
+/* Buyer and recipient info */
+.buyer-info, .fees-info {
+    text-align: left; /* Align text to the left */
+    margin-top: 15px;
+}
+
+/* Adding more space between each paragraph */
+.buyer-info p, .fees-info p {
+    font-size: 1em;
+    color: #fdfbfb;
+    margin: 20px 0; /* Increased margin to add more vertical space */
+}
+
+/* Proceed button styling */
+.proceed-button {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    background: linear-gradient(45deg, #00ffff, #ff00ff);
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.proceed-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+}

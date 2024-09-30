@@ -1,36 +1,21 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import { useNavigate } from 'react-router-dom'; // To navigate to Resell page
 import Navbar from '../components/navbar';
 import './profile.css';
 
-import aevitas from '../graphics/aevitas.png';
-import eldenring from '../graphics/eldenring.jpg';
-import delysium from '../graphics/delysium.jpg';
-import sekiro from '../graphics/sekiro.jpg';
-import angelic from '../graphics/angelic.png';
-import halo from '../graphics/halo.jpg'; 
 import profilePic from '../graphics/gangshi.jpg'; 
 
-const Profile = () => {
-  const [ownedGames] = useState([
-    { name: 'Aevitas', id: Math.random().toString(36).substring(7), price: '0.1', banner: aevitas },
-    { name: 'Elden Ring', id: Math.random().toString(36).substring(7), price: '0.4', banner: eldenring },
-    { name: 'Delysium', id: Math.random().toString(36).substring(7), price: '0.2', banner: delysium },
-    { name: 'Sekiro', id: Math.random().toString(36).substring(7), price: '0.3', banner: sekiro }
-  ]);
-
-  const [soldGames] = useState([
-    { name: 'Angelic', id: Math.random().toString(36).substring(7), price: '0.2', banner: angelic },
-    { name: 'Halo', id: Math.random().toString(36).substring(7), price: '0.3', banner: halo } 
-  ]);
+const Profile = ({ ownedGames, soldGames }) => {
+  const navigate = useNavigate();
 
   // Retrieve saved name and role from localStorage or use default values
-  const [name, setName] = useState(() => localStorage.getItem('profileName') || 'Enter Name');
-  const [isEditing, setIsEditing] = useState(false);
-  const [role, setRole] = useState(() => localStorage.getItem('profileRole') || 'Role');
+  const [name, setName] = React.useState(() => localStorage.getItem('profileName') || 'Enter Name');
+  const [isEditing, setIsEditing] = React.useState(false);
+  const [role, setRole] = React.useState(() => localStorage.getItem('profileRole') || 'Role');
 
   // Handle name change and save to localStorage
   const handleNameChange = (e) => {
-    if (e.target.value.length <= 20) { // Limit to 20 characters
+    if (e.target.value.length <= 20) {
       const newName = e.target.value;
       setName(newName);
       localStorage.setItem('profileName', newName); // Save name to localStorage
@@ -46,6 +31,11 @@ const Profile = () => {
 
   const toggleEditName = () => {
     setIsEditing(!isEditing);
+  };
+
+  // Function to handle resell button click
+  const handleResellClick = (game) => {
+    navigate('/resell', { state: { game } }); // Navigate to Resell page, passing the game as state
   };
 
   return (
@@ -81,7 +71,6 @@ const Profile = () => {
             <option value="Developer">Developer</option>
           </select>
 
-
           <div className="profile-id">
             <strong>ID:</strong> 010002947192001
           </div>
@@ -102,7 +91,12 @@ const Profile = () => {
                   <p><strong>{game.name}</strong></p>
                   <p><strong>ID:</strong> {game.id}</p>
                   <p><strong>Price:</strong> {game.price} sol</p>
-                  <button className="resell-button">Resell</button>
+                  <button
+                    className="resell-button"
+                    onClick={() => handleResellClick(game)}
+                  >
+                    Resell
+                  </button>
                 </div>
               ))}
             </div>
