@@ -72,7 +72,7 @@ const Profile = ({ ownedGames, soldGames }) => {
           </select>
 
           <div className="profile-id">
-            <strong>ID:</strong> 010002947192001
+            <strong>ID:</strong> 012345600032004
           </div>
         </aside>
 
