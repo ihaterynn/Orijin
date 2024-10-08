@@ -47,8 +47,8 @@ const Homepage = () => {
                 <div className="card-content">
                   <p>{role}</p> {/* Display user role */}
                   <ul>
-                    <li>Games Owned: 4</li>
-                    <li>Games Sold: 2</li>
+                    <p>Games Owned: 4</p>
+                    <p>Games Sold: 2</p>
                   </ul>
                 </div>
                 <div className="card-footer">

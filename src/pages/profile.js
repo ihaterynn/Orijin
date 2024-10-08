@@ -74,11 +74,6 @@ const Profile = ({ ownedGames, soldGames }) => {
           <div className="profile-id">
             <strong>ID:</strong> 010002947192001
           </div>
-
-          <div className="profile-stats">
-            <div><strong>0</strong><div>Followers</div></div>
-            <div><strong>0</strong><div>Following</div></div>
-          </div>
         </aside>
 
         <div className="main-content">
