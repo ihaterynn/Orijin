@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Orijin/static/css/main.faa463e0.css",
-    "main.js": "/Orijin/static/js/main.78f5b9de.js",
+    "main.css": "/Orijin/static/css/main.de87abce.css",
+    "main.js": "/Orijin/static/js/main.f6db9963.js",
     "static/js/453.f2621980.chunk.js": "/Orijin/static/js/453.f2621980.chunk.js",
     "static/media/delysium.jpg": "/Orijin/static/media/delysium.ee6bd0aa1b1b77a2ca5a.jpg",
     "static/media/angelic.png": "/Orijin/static/media/angelic.748d1057bdc6c1fa6ad2.png",
@@ -16,12 +16,12 @@
     "static/media/gangshi.jpg": "/Orijin/static/media/gangshi.7ed3edf4649ee164ff60.jpg",
     "static/media/sekiro.jpg": "/Orijin/static/media/sekiro.dee83db5a6dcee8ae19d.jpg",
     "index.html": "/Orijin/index.html",
-    "main.faa463e0.css.map": "/Orijin/static/css/main.faa463e0.css.map",
-    "main.78f5b9de.js.map": "/Orijin/static/js/main.78f5b9de.js.map",
+    "main.de87abce.css.map": "/Orijin/static/css/main.de87abce.css.map",
+    "main.f6db9963.js.map": "/Orijin/static/js/main.f6db9963.js.map",
     "453.f2621980.chunk.js.map": "/Orijin/static/js/453.f2621980.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.faa463e0.css",
-    "static/js/main.78f5b9de.js"
+    "static/css/main.de87abce.css",
+    "static/js/main.f6db9963.js"
   ]
 }
